@@ -1,0 +1,481 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Verify AddToCart functionality",
+        "description": "",
+        "id": "application-smoke-test;verify-addtocart-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3897758900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Initialise the browser with chrome",
+            "match": {
+              "location": "stepDefinition.initialise_the_browser_with_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6578829500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Navigate to \"http://automationpractice.com/index.php\" site",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinition.navigate_to_site(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 299057200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I add to cart first item",
+            "match": {
+              "location": "stepDefinition.i_add_to_cart_first_item()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1270201800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Item is added to cart successfully",
+            "match": {
+              "location": "stepDefinition.item_is_added_to_cart_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Verify shopping cart summary",
+        "description": "",
+        "id": "application-smoke-test;verify-shopping-cart-summary",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2483760700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Second item is also added successfully",
+            "match": {
+              "location": "stepDefinition.second_item_is_also_added_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2293887400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click on cart link",
+            "match": {
+              "location": "stepDefinition.i_click_on_cart_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30880700,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Shopping cart summary tab is displayed",
+            "match": {
+              "location": "stepDefinition.shopping_cart_summary_tab_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "It shows shopping cart contains \"2 products\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Verify authentication step",
+        "description": "",
+        "id": "application-smoke-test;verify-authentication-step",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19085700,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Shopping cart summary tab is displayed",
+            "match": {
+              "location": "stepDefinition.shopping_cart_summary_tab_is_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2198039200,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Proceed to checkout is clicked",
+            "match": {
+              "location": "stepDefinition.proceed_to_checkout_is_clicked()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194320400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I input registered email \"isha3.varshney@gmail.com\" and \"Welcome1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "isha3.varshney@gmail.com",
+                  "offset": 26
+                },
+                {
+                  "val": "Welcome1",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinition.i_input_registered_email_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1715742500,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I click on sign In",
+            "match": {
+              "location": "stepDefinition.i_click_on_sign_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30963800,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Address tab is displayed",
+            "match": {
+              "location": "stepDefinition.address_tab_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Proceed from address step to shipping step",
+        "description": "",
+        "id": "application-smoke-test;proceed-from-address-step-to-shipping-step",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16857500,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Address tab is displayed",
+            "match": {
+              "location": "stepDefinition.address_tab_is_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1648719800,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I click on proceed to checkout button",
+            "match": {
+              "location": "stepDefinition.i_click_on_proceed_to_checkout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34026600,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Shipping tab is displayed",
+            "match": {
+              "location": "stepDefinition.shipping_tab_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "Proceed from shipping step to payment step",
+        "description": "",
+        "id": "application-smoke-test;proceed-from-shipping-step-to-payment-step",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60048900,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I accept terms of service",
+            "match": {
+              "location": "stepDefinition.i_accept_terms_of_service()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1482923800,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I click on proceed to checkout on shipping",
+            "match": {
+              "location": "stepDefinition.i_click_on_proceed_to_checkout_on_shipping()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26352200,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Payment tab is displayed",
+            "match": {
+              "location": "stepDefinition.payment_tab_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 51,
+        "name": "Verify order payment by Pay by bank wire method",
+        "description": "",
+        "id": "application-smoke-test;verify-order-payment-by-pay-by-bank-wire-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17864600,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Payment tab is displayed",
+            "match": {
+              "location": "stepDefinition.payment_tab_is_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 937351900,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I click on Pay by bank wire",
+            "match": {
+              "location": "stepDefinition.i_click_on_pay_by_bank_wire()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41977200,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Order summary is displayed",
+            "match": {
+              "location": "stepDefinition.order_summary_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Verify order cofirmation",
+        "description": "",
+        "id": "application-smoke-test;verify-order-cofirmation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17638200,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Order summary is displayed",
+            "match": {
+              "location": "stepDefinition.order_summary_is_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1866788500,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click on confirm my order",
+            "match": {
+              "location": "stepDefinition.i_click_on_confirm_my_order()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1242599900,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "Order confirmation \"Your order on My Store is complete.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your order on My Store is complete.",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinition.order_confirmation_something_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Application Smoke Test",
+    "description": "",
+    "id": "application-smoke-test",
+    "keyword": "Feature",
+    "uri": "Smoke.feature",
+    "tags": [
+      {
+        "line": 19,
+        "name": "@tag"
+      }
+    ]
+  }
+]
