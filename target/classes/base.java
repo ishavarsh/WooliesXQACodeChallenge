@@ -40,6 +40,7 @@ public class base
 		}
 			
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		
 		return driver;
 		
 		
